@@ -7,13 +7,13 @@ repositories {
 }
 
 dependencies {
-    minecraft 'com.mojang:minecraft:1.21.1'
-    mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
-    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    minecraft 'com.mojang:minecraft:1.18.2'
+    mappings 'net.fabricmc:yarn:1.18.2+build.4'
+    modImplementation "net.fabricmc:fabric-loader:0.15.10"
     //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.1+1.21.1"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.77.0+1.18.2"
     //text placeholder API
-    modImplementation include("eu.pb4:placeholder-api:2.4.0-pre.2+1.21")
+    modImplementation include("eu.pb4:placeholder-api:1.1.3+1.17.1")
 
     implementation project(':common')
     shadow project(':common')
