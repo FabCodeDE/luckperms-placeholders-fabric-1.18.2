@@ -20,9 +20,9 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.15.11",
-    "minecraft": ">=1.21",
-    "placeholder-api": ">=2.4.0-pre.2+1.21",
+    "fabricloader": ">=0.15.10",
+    "minecraft": ">=1.18.2",
+    "placeholder-api": ">=1.1.3+1.17.1",
     "luckperms": "*"
   }
 }

@@ -67,7 +67,9 @@ public class LuckPermsFabricPlaceholders implements ModInitializer, PlaceholderP
                 if (ctx.hasPlayer()) {
                     ServerPlayerEntity player = ctx.getPlayer();
                     User user = luckPerms.getUserManager().getUser(player.getUuid());
-                    if (user == null) return PlaceholderResult.invalid("No user!");
+                    if (user == null) {
+                        return PlaceholderResult.value("");
+                    }
 
                     CachedDataManager data = user.getCachedData();
                     QueryOptions queryOptions = luckPerms.getContextManager().getQueryOptions(player);
@@ -92,7 +94,7 @@ public class LuckPermsFabricPlaceholders implements ModInitializer, PlaceholderP
 
                     return result == null ? PlaceholderResult.invalid() : PlaceholderResult.value(TextParser.parse(result.toString()));
                 } else {
-                    return PlaceholderResult.invalid("No player!");
+                    return PlaceholderResult.value("");
                 }
             });
         });
